@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Selenium with java",
+      "author": "Sandeep"
+    },
+    {
+      "id": 2,
+      "title": "Selenium with cucumber",
+      "author": "Sandeep Singh"
+    },
+    {
+      "id": 3
+    },
+    {
+      "author": "S Singh",
+      "id": "5",
+      "title": "Robot framework"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "excellent",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Sams",
+    "postId": "2"
+  },
+  "address": {
+    "primary": [
+      {
+        "city": "Delhi",
+        "state": "New Delhi",
+        "Country": "India",
+        "Pincode": 110017
+      },
+      {
+        "city": "Jamshedpur",
+        "state": "Jharkhand",
+        "Country": "India",
+        "Pincode": 831001
+      }
+    ],
+    "secondary": [
+      {
+        "city": "bangalore",
+        "State": "Karnataka",
+        "Country": "India",
+        "Pincode": 112233
+      }
+    ]
+  }
+}

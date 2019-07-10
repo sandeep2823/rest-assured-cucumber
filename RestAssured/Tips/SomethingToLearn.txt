@@ -1,0 +1,5 @@
+1. Types of parameters in REST call
+	 Path parameter
+	 Query Parameter
+	 Header Parameter
+	 Body Parameter
