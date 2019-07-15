@@ -44,10 +44,36 @@ public class RestAssuredExtension {
 		return null;
 	}
 
+	public static ResponseOptions<Response> GetOpsQureyParams(String url, String queryParams) {
+		// Act
+		try {
+			Request.queryParam(queryParams);
+			return Request.get(new URI(url));
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 	public static ResponseOptions<Response> PostOpsWithBodyAndPathParams(String url, Map<String, String> pathparams,
 			Map<String, String> body) {
 		Request.pathParams(pathparams);
 		Request.body(body);
 		return Request.post(url);
+	}
+
+	public static ResponseOptions<Response> PostOpsWithBody(String url, Map<String, String> body) {
+		Request.body(body);
+		return Request.post(url);
+	}
+
+	public static ResponseOptions<Response> DeleteOpsWithPathParams(String url, Map<String, String> pathParams) {
+		Request.pathParams(pathParams);
+		return Request.delete(url);
+	}
+
+	public static ResponseOptions<Response> GetWithPathParams(String url, Map<String, String> pathParams) {
+		Request.pathParams(pathParams);
+		return Request.get(url);
 	}
 }
